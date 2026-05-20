@@ -13,6 +13,7 @@ const HeroText = () => {
       <div className="flex-col hidden md:flex c-space">
         <motion.h1
           className="text-4xl font-medium"
+          style={{ color: "#3b1f0e" }}
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -22,7 +23,8 @@ const HeroText = () => {
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
-            className="text-5xl font-medium text-stone-600"
+            className="text-5xl font-medium"
+            style={{ color: "#5c3317" }}
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -38,11 +40,12 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-black text-white text-8xl"
+              className="font-black text-8xl"
             />
           </motion.div>
           <motion.p
-            className="text-4xl font-medium text-stone-600"
+            className="text-4xl font-medium"
+            style={{ color: "#5c3317" }}
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -56,16 +59,18 @@ const HeroText = () => {
       <div className="flex flex-col space-y-6 md:hidden">
         <motion.p
           className="text-4xl font-medium"
+          style={{ color: "#3b1f0e" }}
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I'm Manya
+          Hi, I'm Manya
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-stone-600"
+            className="text-5xl font-black"
+            style={{ color: "#5c3317" }}
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -81,17 +86,18 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-white text-7xl"
+              className="font-bold text-7xl"
             />
           </motion.div>
           <motion.p
-            className="text-4xl font-black text-stone-600"
+            className="text-4xl font-black"
+            style={{ color: "#5c3317" }}
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Applications
+            Products & Applications
           </motion.p>
         </div>
       </div>

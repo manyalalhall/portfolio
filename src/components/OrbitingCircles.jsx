@@ -22,7 +22,8 @@ export function OrbitingCircles({
           className="absolute inset-0 pointer-events-none size-full"
         >
           <circle
-            className="stroke-1 stroke-white/10"
+            className="stroke-1"
+            style={{ stroke: "rgba(122, 74, 42, 0.4)" }}
             cx="50%"
             cy="50%"
             r={radius}

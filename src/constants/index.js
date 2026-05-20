@@ -10,30 +10,14 @@ export const myProjects = [
       "Improved detection performance from 63% to 76% through dataset refinement, augmentation pipelines, and iterative tuning.",
       "Built a scale-aware person-weapon association algorithm and unified GUI supporting image, video, and livestream inputs.",
     ],
-    href: "",
+    href: "https://drive.google.com/drive/folders/17BzJNB4nvtxsO1XH_JMFhk164SIcOXNP?usp=sharing",
     logo: "",
     image: "/assets/projects/accessories.jpg",
     tags: [
-      {
-        id: 1,
-        name: "Python",
-        path: "/assets/logos/python.svg",
-      },
-      {
-        id: 2,
-        name: "YOLOv8",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 3,
-        name: "Deep Learning",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 4,
-        name: "Computer Vision",
-        path: "/assets/logos/vitejs.svg",
-      },
+      { id: 1, name: "Python",         path: "/assets/logos/python.svg" },
+      { id: 2, name: "YOLOv8",         path: "/assets/logos/git.svg" },
+      { id: 3, name: "Deep Learning",  path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "Computer Vision",path: "/assets/logos/vitejs.svg" },
     ],
   },
   {
@@ -46,30 +30,14 @@ export const myProjects = [
       "Implemented authentication, modular backend APIs, and scalable database workflows for content management.",
       "Applied product management principles including user journey analysis, feature prioritization, and competitive analysis.",
     ],
-    href: "",
+    href: "https://github.com/manyalalhall/dayly.git",
     logo: "",
     image: "/assets/projects/auth-system.jpg",
     tags: [
-      {
-        id: 1,
-        name: "ReactJS",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "Node.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-      {
-        id: 3,
-        name: "MongoDB",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 4,
-        name: "REST APIs",
-        path: "/assets/logos/git.svg",
-      },
+      { id: 1, name: "ReactJS",   path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js",   path: "/assets/logos/vitejs.svg" },
+      { id: 3, name: "MongoDB",   path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "REST APIs", path: "/assets/logos/git.svg" },
     ],
   },
 ];
@@ -114,55 +82,5 @@ export const experiences = [
       "Served as NCC Cadet Captain and earned NCC C Certificate for leadership and teamwork.",
       "Solved 100+ coding problems across LeetCode and Codeforces, strengthening algorithmic problem-solving skills.",
     ],
-  },
-];
-export const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
-  },
-  {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
-  },
-  {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
-  },
-  {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
-  },
-  {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
-  },
-  {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
   },
 ];

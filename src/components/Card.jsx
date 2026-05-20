@@ -12,8 +12,8 @@ const Card = ({ style, text, image, containerRef }) => {
     />
   ) : (
     <motion.div
-      className="absolute px-1 py-4 text-xl text-center rounded-full ring ring-gray-700 font-extralight bg-storm w-[12rem] cursor-grab"
-      style={style}
+      className="absolute px-3 py-2 text-sm text-center rounded-full font-extralight w-[8rem] cursor-grab"
+      style={{ ...style, background: "#4a2c1a", color: "#f5ede0", border: "1.5px solid #7a4a2a" }}
       whileHover={{ scale: 1.05 }}
       drag
       dragConstraints={containerRef}

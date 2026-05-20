@@ -17,7 +17,8 @@ const CopyEmailButton = () => {
       onClick={copyToClipboard}
       whileHover={{ y: -5 }}
       whileTap={{ scale: 1.05 }}
-      className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden"
+      className="relative px-1 py-4 text-sm text-center rounded-full font-extralight w-[12rem] cursor-pointer overflow-hidden"
+      style={{ background: "#f5ede0", color: "#3b1f0e", border: "1.5px solid #a07050" }}
     >
       <AnimatePresence mode="wait">
         {copied ? (
