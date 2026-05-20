@@ -1,48 +1,45 @@
-import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
-import { Astronaut } from "../components/Astronaut";
-import { Float } from "@react-three/drei";
+import { motion } from "motion/react";
 import { useMediaQuery } from "react-responsive";
-import { easing } from "maath";
-import { Suspense } from "react";
-import Loader from "../components/Loader";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
+
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
+    <section
+      id="home"
+      className="relative flex items-center justify-center min-h-screen overflow-hidden md:items-center md:justify-between c-space"
+      style={{ background: "transparent" }}
+    >
+      {/* Left: Text */}
       <HeroText />
-      <ParallaxBackground />
-      <figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
+
+      {/* Right: Hovering photo frame */}
+      <motion.div
+        className="z-10 flex-shrink-0 mt-10 md:mt-0"
+        animate={{ y: [0, -14, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
-            <Float>
-              <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
-              />
-            </Float>
-            <Rig />
-          </Suspense>
-        </Canvas>
-      </figure>
+        <div
+          style={{
+            width: isMobile ? "180px" : "300px",
+            height: isMobile ? "220px" : "370px",
+            borderRadius: "2rem",
+            overflow: "hidden",
+            border: "4px solid rgba(180,140,100,0.35)",
+            boxShadow: "0 16px 48px 0 rgba(140,100,60,0.18), 0 2px 8px 0 rgba(180,140,100,0.12)",
+            background: "#f5ede0",
+          }}
+        >
+          <img
+            src="/assets/manya.jpeg"
+            alt="Manya Singh Lalhall"
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+          />
+        </div>
+      </motion.div>
     </section>
   );
 };
-
-function Rig() {
-  return useFrame((state, delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
-      0.5,
-      delta
-    );
-  });
-}
 
 export default Hero;
