@@ -37,42 +37,42 @@ const About = () => {
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="AI/ML"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              text="Full-Stack"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
+              text="Product Thinking"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              text="Agile / Scrum"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              text="YOLOv8"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/python.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/git.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -82,7 +82,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Mars, and open to remote work worldwide
+              I'm based in Dharamshala, India, and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -101,7 +101,7 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
+            <p className="headText">Tech Stack</p>
             <p className="subtext">
               I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications.
