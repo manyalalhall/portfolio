@@ -75,7 +75,7 @@ export const experiences = [
   {
     title: "B.Tech in Computer Science and Engineering",
     job: "NIT Hamirpur",
-    date: "Aug 2023 - Dec 2025",
+    date: "2023 - 2027",
     contents: [
       "Pursuing a Bachelor's degree in Computer Science and Engineering with a CGPA of 8.00/10.00.",
       "Led robotics workshops with 400+ participants and organized RoboWeek 3.0 at NIT Hamirpur.",
