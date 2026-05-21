@@ -1,5 +1,4 @@
 import HeroText from "../components/HeroText";
-import { motion } from "motion/react";
 import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
@@ -14,12 +13,8 @@ const Hero = () => {
       {/* Left: Text */}
       <HeroText />
 
-      {/* Right: Hovering photo frame */}
-      <motion.div
-        className="z-10 flex-shrink-0 mt-10 md:mt-0"
-        animate={{ y: [0, -14, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      >
+      {/* Right: Static photo frame */}
+      <div className="z-10 flex-shrink-0 mt-10 md:mt-0">
         <div
           style={{
             width: isMobile ? "180px" : "300px",
@@ -37,7 +32,7 @@ const Hero = () => {
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
           />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
