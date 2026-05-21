@@ -43,15 +43,15 @@ const About = () => {
         {/* Grid 2 — skills displayed inline across 2-3 rows */}
         <div
           className="grid-2 relative overflow-hidden rounded-2xl hover:-translate-y-1 duration-200 p-6"
-          style={{ background: "#f5ede0" }}
+          style={{ background: "#cabaaf" }}
         >
           <div className="flex items-center justify-center h-full w-full">
             <div className="flex flex-wrap gap-x-5 gap-y-3 justify-center">
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="text-base font-bold"
-                  style={{ color: "#5c3317" }}
+                  className="text-base font-normal"
+                  style={{ color: "#3b1f0e" }}
                 >
                   {skill}
                 </span>
@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
         {/* Grid 5 — tech stack */}
-        <div className="grid-default-color grid-5 flex items-center gap-6 p-6">
+        <div className="grid-default-color grid-5 flex items-center gap-6 p-6" style={{background:"#dacabe"}}>
           <div className="z-10 w-[45%] shrink-0">
             <p className="mt-2 mb-2 text-xl">Tech Stack</p>
             <p className="subtext">

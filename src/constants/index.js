@@ -32,12 +32,29 @@ export const myProjects = [
     ],
     href: "https://github.com/manyalalhall/dayly.git",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "",
     tags: [
       { id: 1, name: "ReactJS",   path: "/assets/logos/react.svg" },
       { id: 2, name: "Node.js",   path: "/assets/logos/vitejs.svg" },
       { id: 3, name: "MongoDB",   path: "/assets/logos/javascript.svg" },
       { id: 4, name: "REST APIs", path: "/assets/logos/git.svg" },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Calendar: A Desktop Widget",
+    description:
+      "Built a desktop calendar widget using JavaScript, CSS, and Electron with responsive UI components, date navigation, and desktop application support.",
+    subDescription:[],
+    href: "https://github.com/manyalalhall/calendar.git",
+    logo: "",
+    image: "",
+    tags: [
+      { id: 1, name: "javascript",   path: "/assets/logos/react.svg" },
+      { id: 2, name: "CSS",   path: "/assets/logos/vitejs.svg" },
+      { id: 3, name: "HTML",   path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "Electron", path: "/assets/logos/git.svg" },
     ],
   },
 ];
@@ -83,4 +100,5 @@ export const experiences = [
       "Solved 100+ coding problems across LeetCode and Codeforces, strengthening algorithmic problem-solving skills.",
     ],
   },
+
 ];

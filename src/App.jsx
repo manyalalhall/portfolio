@@ -10,6 +10,8 @@ import Footer from './sections/Footer';
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
+      <div className="background-overlay"></div>
+      <div className="realtive z-10 container mx-auto max-w-7xl">
       <Navbar />
       <Hero />
       <About />
@@ -17,6 +19,7 @@ const App = () => {
       <Experiences />
       <Contact />
       <Footer/>
+      </div>
     </div>
   );
 };
